@@ -13591,7 +13591,9 @@ Dog face detection accuracy 0.11
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong>
+This does not seem like a reasonable expectation the algorithm would not work for side angels or pictures showing partial faces of people which is a necessity especially in face detection applications on social media, security etc.
+Instead we can use deep learning to detect humans in images which could automatically learn different features from the faces like ears, eyes, noses, etc. and use them to determine whether a face is human or not. Given sufficient training data, CNNs should be able to do so easily.</p>
 <p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on each of the datasets.</p>
 
 </div>
